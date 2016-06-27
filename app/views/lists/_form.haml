@@ -1,0 +1,9 @@
+= form_for @list do |f|
+  = f.label :name
+  = f.text_field :name
+  #recipes
+    = f.fields_for :recipes do |recipe|
+      = render 'recipes/recipe_fields', f: recipe
+      .links
+        = link_to_add_association 'add recipe', f, :recipes, partial: 'recipes/recipe_fields'
+  = f.submit
