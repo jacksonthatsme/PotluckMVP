@@ -35,6 +35,9 @@ gem 'cocoon'
 # Use HAML for Html Preprocessing
 gem 'haml'
 
+# Use Domainatrix (Terrible Name) to suss out canonical domain
+gem 'domainatrix'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

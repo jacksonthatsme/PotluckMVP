@@ -2,3 +2,5 @@
 %br/
 - @list.recipes.each do |recipe|
   = recipe.url
+  - recipe.ingredients.each do |ingredient|
+    = ingredient.name
